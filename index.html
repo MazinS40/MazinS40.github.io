@@ -1,65 +1,295 @@
-# MazinS40.github.io
 <!DOCTYPE html>
 <html>
-    <style>
-h1{color:Black ;}
-table{font-size:20px;}
-thead{color:Black;}  
-body{background:Orange;}
+<style>
+    tbody{color:forestgreen;}
+    h1{color:forestgreen ;}
+    table{font-size:20px;}
+    thead{color:blue;}
+    body  {
+        background-image: url(https://cdn.pixabay.com/photo/2017/01/27/14/25/burger-2013191__340.png);
+        background-color: bisque;
+    }
 
-    
-    
+
 </style>
 
-    <head>
-        <meta charset="utf-8">
-        <title>Challenge: The dinner table</title>
-    </head>
-    <body>
-    
-        <h1>Our dinner menu</h1>
+<head>
+    <meta charset="utf-8">
+    <title>Challenge: The dinner table</title>
+</head>
+<body>
 
-        <table border="1">
-            <thead>
-                <tr>
-                    <th id="meal">Meal</th>
-                    <th>Ingredients</th>
-                    <th>Price</th>
-                </tr>
-            </thead>
-            <tbody>
-                
-            </tbody>
-            
-    <tr><td>Hot dogs</td> <td>Beef</td> <td>$3.50</td></tr> 
-   <tr><td>Hamburgers</td> <td>Beef, Lettice, Onions,Tomatoes</td> <td>$4.00</td></tr>
-    <tr><td>Fries</td> <td>Patotoes</td> <td>$2.50</td></tr>  
-    
-  <tr><td>Chicken Tender</td> <td>Chicken</td> <td>$3.00</td></tr> 
- <tr><td>Wings Basket</td> <td>Chicken</td> <td>$5.00</td></tr> 
-   <tr><td>Pizza Slice</td> <td>Cheese</td> <td>$4.00</td></tr>  
-    <tr><td>Ice Cream</td> <td>Milk</td> <td>$2.00</td></tr> 
-    <tr><td>Milk Shake</td> <td>Milk, Ice Cream</td> <td>$3.50</td></tr> 
-    
-    </table>
-<img src="data:image/png;base64,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"width="275" height="200"> 
-<img src="https://cdn.pixabay.com/photo/2016/03/05/20/17/america-1238742__340.jpg" width= "250" height="200"> 
+<h1>Burgers</h1>
 
-<img src="https://cdn.pixabay.com/photo/2015/11/03/15/42/milkshake-1021027_960_720.jpg" width="275" height="200">
+<table border="2">
+    <thead>
+    <tr>
+        <th id="meal">Burgers</th>
+        <th>Ingredients</th>
+        <th>Price</th>
+    </tr>
+    </thead>
 
-<img src=" https://cdn.pixabay.com/photo/2015/03/26/09/39/fried-chicken-690039_960_720.jpg"  width="275" height="200">
 
-<img src="  https://cdn.pixabay.com/photo/2015/06/21/15/30/strawberries-816698__340.jpg "width="275" height="200">
+    <tr><td>ShackBurger®</td> <td>Beef, Cheeseburger topped with lettuce, tomato, ShackSauce™.</td> <td>$3.50</td></tr>
+    <tr><td>Hamburgers</td> <td>Choice of lettuce, tomato, pickle or onion.
+       <br> Add cheese or all-natural applewood smoked bacon.</td> <td>$4.00</td></tr>
+    <tr><td>Shack Stack®</td> <td>Cheeseburger and a ’Shroom Burger topped with lettuce, tomato, ShackSauce™.</td> <td>$2.50</td></tr>
+    <tr><td>SmokeShack®</td> <td>Cheeseburger topped with all-natural applewood smoked bacon, chopped cherry pepper, ShackSauce™.</td> <td>$3.00</td></tr>
 
-<img src="https://cdn.pixabay.com/photo/2014/01/24/04/05/fried-chicken-250863__340.jpg"width="275" height="200">
-        
-<img src="https://cdn.pixabay.com/photo/2015/09/05/01/05/french-fries-923687__340.jpg"width="275" height="200">
+</table>
 
-<img src="https://cdn.pixabay.com/photo/2015/09/06/01/10/hamburger-926885__340.jpg"width="275" height="200">
 
-<img src="https://cdn.pixabay.com/photo/2014/01/30/22/38/dodgers-255177__340.jpg"width="275" height="200">
 
-<imgsrc="https://image.shutterstock.com/display_pic_with_logo/612688/593995979/stock-photo-baked-chicken-wings-with-sesame-and-sauce-food-background-with-copy-space-top-view-593995979.jpg"width="275" height="200">
- </body>
-  
+
+
+
+<h1>Chicken</h1>
+<h3>Flock this way! 100% all-natural cage free chicken, served on a non-GMO Martin’s Potato Roll. No hormones and no antibiotics ever. (Not available at stadium Shacks.)</h3>
+<table border="2">
+    <thead>
+    <tr>
+        <th id="meal">Chicken</th>
+        <th>Ingredients</th>
+        <th>Price</th>
+    </tr>
+    </thead>
+
+
+    <tr><td>Chick'n Shack®</td> <td>Crispy chicken breast with lettuce, pickles and buttermilk herb mayo.</td> <td>$3.50</td></tr>
+
+</table>
+
+
+
+
+
+<h1>Flat-Top Dogs</h1>
+<h4>With all this burger talk it’s easy to forget that Shake Shack began as a humble hot dog cart.  These bad boys are not to be missed.  Our dogs are 100% all-natural Vienna beef with no hormones and no antibiotics ever, served on a non-GMO Martin’s Potato Roll.  Split and griddled crisp… perfection!</h4>
+<table border="2">
+    <thead>
+    <tr>
+        <th id="meal">Flat-Top Dogs</th>
+        <th>Ingredients</th>
+        <th>Price</th>
+    </tr>
+    </thead>
+
+
+    <tr><td>Shack-cago Dog®</td> <td>Dragged through the garden with Rick's Picks Shack relish, onion, cucumber, pickle, tomato, sport pepper, celery salt, mustard.</td> <td>$3.50</td></tr>
+    <tr><td>Hot Dog</td> <td>Add Shack cheese sauce.</td> <td>$4.00</td></tr>
+    <tr><td>Chicken Dog</td> <td>Shake Shack chicken, apple and sage sausage (made exclusively for the Shack!).</td> <td>$2.50</td></tr>
+    <tr><td>SmokeShack®</td> <td>Cheeseburger topped with all-natural applewood smoked bacon, chopped cherry pepper, ShackSauce™.</td> <td>$3.00</td></tr>
+
+</table>
+
+
+
+
+
+<h1>Fries</h1>
+<table border="2">
+    <thead>
+    <tr>
+        <th id="Meal">Fries</th>
+        <th>Ingredients</th>
+        <th>Price</th>
+    </tr>
+    </thead>
+
+
+    <tr><td>Fries</td> <td> Crispy, crunchy, salty potato-y goodness!</td> <td>$3.50</td></tr>
+    <tr><td>Cheese Fries</td> <td>Topped with our special blend of cheddar and American cheese sauce. Warning: They’re highly addictive.</td> <td>$4.00</td></tr>
+
+</table>
+
+
+
+
+<h1>Frozen Custard</h1>
+<h4>Our dense, rich and creamy frozen custard is the real deal – spun fresh daily at the Shack!  Our vanilla and chocolate recipes use only real sugar, no corn syrup, and milk from dairy farmers who pledge not to use artificial growth hormones.  Our fudge sauce and caramel sauce have zero shelf-life lengtheners.  We dare you not to like it.
+
+   <br> Our concretes are specifically tailored and created for each Shack location.  Here’s a handful of our guests’ favorites!</h4>
+<table border="2">
+    <thead>
+    <tr>
+        <th id="meal">Frozen Custard</th>
+        <th>Ingredients</th>
+        <th>Price</th>
+    </tr>
+    </thead>
+
+
+    <tr><td>Shack Attack®</td> <td>Chocolate custard, fudge sauce, chocolate truffle cookie dough and Mast Brothers Shake Shack dark chocolate chunks, topped with chocolate sprinkles.</td> <td>$3.50</td></tr>
+    <tr><td>Wall-nut Street (Battery Park City) </td> <td>Vanilla custard, chocolate truffle cookie dough, walnuts and amarena cherries.</td> <td>$4.00</td></tr>
+    <tr><td>Jelly’s Last Donut (Theater District)</td> <td>Jelly’s Last Donut (Theater District.)</td> <td>$2.50</td></tr>
+    <tr><td>Brooklyn Pie Oh My (Brooklyn Shacks)</td> <td>Vanilla custard and slice of Four & Twenty Blackbirds seasonal pie.</td> <td>$3.00</td></tr>
+    <tr><td>Banana Post Rd. (Westport)</td> <td>Chocolate custard, caramelized cocoa nibs, bananas and sea salt.</td> <td>$5.00</td></tr>
+
+</table>
+
+
+<h1>Our dinner menu</h1>
+
+<table border="2">
+    <thead>
+    <tr>
+        <th id="meal">Other</th>
+        <th>Ingredients</th>
+        <th>Price</th>
+    </tr>
+    </thead>
+
+
+    <tr><td>Shakes</td> <td>Hand-spun vanilla, chocolate, caramel, black & white, strawberry, peanut butter or coffee Fair Shake. Make it malted, why don’t you?</td> <td>$3.50</td></tr>
+    <tr><td>Floats</td> <td>Root beer, purple cow, creamsicle.</td> <td>$4.00</td></tr>
+    <tr><td>Cups & Cones</td> <td>Handmade frozen custard in vanilla or chocolate. Do a single dip, double dip, or pint to go. Choose a cone, and feel like it's summer year-round!</td> <td>$2.50</td></tr>
+    <tr><td>Concretes</td> <td>Dense frozen custard blended at high speed with mix-ins. You can make your own, or choose from a selection of signature concretes (the crazy-great combinations are specific to each Shack). Available in single or double.</td> <td>$3.00</td></tr>
+
+</table>
+
+<h1>Drinks</h1>
+<h4>Wash down your meal with an ice cold beverage.  From our delicious Shack-made lemonade and fresh brewed iced tea, to our wide assortment of beer and wine, we’ve got your thirst quenched. Cheers!</h4>
+<table border="2">
+    <thead>
+    <tr>
+        <th id="meal">Drinks</th>
+        <th>Ingredients</th>
+        <th>Price</th>
+    </tr>
+    </thead>
+
+
+    <tr><td>Shack-made Lemonade</td> <td>Lemon-y good and sweetened just right with Shack-made simple syrup. Choose original or featured flavor.</td> <td>$3.50</td></tr>
+    <tr><td>Fresh Brewed Iced Tea</td> <td>Brewed fresh daily at the Shack.</td> <td>$4.00</td></tr>
+    <tr><td>Fifty/Fifty™</td> <td>Half lemonade, half iced tea – fully refreshing.</td> <td>$2.50</td></tr>
+    <tr><td>Fountain Soda</td> <td>Coke, Diet Coke, Coke Zero Sugar, Sprite, Fanta Orange, Fanta Grape, Dr Pepper.</td> <td>$3.00</td></tr>
+    <tr><td>Abita Draft Root Beer</td> <td>Made in Louisiana at Abita Brewing Co. from clean spring water and Louisiana cane sugar.</td> <td>$3.50</td></tr>
+    <tr><td>SHACK|2O®</td> <td>1% of every bottle sold supports the cleanup of water sources. (710ml.)</td> <td>$4.00</td></tr>
+
+</table>
+
+
+<h1>Beer and Wine</h1>
+<h5>Meet ShackMeister® Ale, otherwise known as the ShackBurger’s best friend.  Our team collaborated with Brooklyn Brewery to create this stellar beer.  We think it’s a brew surely worthy of our eats with its deep golden color, bright citrus aroma, slight bitterness and bready malt flavor.  If wine’s more your style, our incredible house red and white (made exclusively for Shake Shack by Napa Valley’s celebrated Frog’s Leap) are patiently waiting for you to take notice.</h5>
+<table border="2">
+    <thead>
+    <tr>
+        <th id="meal">Beer and Wine</th>
+        <th>Ingredients</th>
+        <th>Price</th>
+    </tr>
+    </thead>
+
+
+    <tr><td>ShackMeister® Ale</td> <td> Made just for us by Brooklyn Brewery.</td>  <td>$3.50</td></tr>
+    <tr><td>Bottle</td> <td>We thoughtfully select local brews tailored to each location.<br>Check out your neighborhood Shack for the full offering.</td> <td>$4.00</td></tr>
+    <tr><td>Wine</td> <td>Shack Red® and Shack White® by Frog's Leap available by the glass or bottle.
+        <br>We hand-pick a variety of wines to complement the Shack menu.</td> <td>$3.00</td></tr>
+
+</table>
+
+
+
+<h1>For Dogs</h1>
+<h4> Woof!  We’ll always have a special place in our hearts for your furry four-legged friend.  We were born in a park, after all!  Shake Shack’s dog menu is available at all Shake Shacks except stadiums, ballparks, airports and international outposts.</h4>
+<table border="2">
+    <thead>
+    <tr>
+        <th id="meal">For Dogs</th>
+        <th>Ingredients</th>
+        <th>Price</th>
+    </tr>
+    </thead>
+
+    <tr><td>Pooch-ini®</td> <td>ShackBurger® dog biscuits, peanut butter sauce and vanilla custard. Includes dairy, sugar and nut products. Not intended for small dogs... just let 'em have a lick or two!</td> <td>$3.50</td></tr>
+    <tr><td>Bag O' Bones</td> <td>5 ShackBurger® dog biscuits made just for us by NYC's Bocce's Bakery.</td> <td>$4.00</td></tr>
+
+
+</table>
+
+
+
+<h1>Breakfast</h1>
+<h4> Wake up and smell the Shack! Breakfast is currently available at the Madison Square Park, JFK, Union Station, Grand Central, Fulton Center, Penn Station, LAX and Dubai Airport Shacks.</h4>
+<table border="2">
+    <thead>
+    <tr>
+        <th id="meal">Breakfast</th>
+        <th>Ingredients</th>
+        <th>Price</th>
+    </tr>
+    </thead>
+
+
+    <tr><td>Sausage, Egg N’ Cheese</td> <td>Griddled cage-free egg topped with all-natural pork sausage and American cheese.</td> <td>$3.50</td></tr>
+    <tr><td>Bacon, Egg N’ Cheese</td> <td>Griddled cage-free egg, all-natural applewood smoked bacon and American cheese.</td> <td>$4.00</td></tr>
+    <tr><td>Egg N’ Cheese</td> <td>Nice 'n' simple. Griddled cage-free egg and American cheese.</td> <td>$2.50</td></tr>
+    <tr><td>Coffee</td> <td>Custom Stumptown Shack blend, roasted locally in Brooklyn. Organic and brewed with Direct Trade beans.</td> <td>$3.00</td></tr>
+    <tr><td>OJ</td> <td>Fresh squeezed organic oranges.</td> <td>$3.50</td></tr>
+
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img src="https://www.shakeshack.com/wp-content/themes/shakeshack/images/food_and_drink_ChickenSandwich.png"width="300" height="300">
+
+<img src="https://www.shakeshack.com/wp-content/themes/shakeshack/images/food_and_drink_HotDog2.png"width="300" height="200">
+
+<img src="https://www.shakeshack.com/wp-content/themes/shakeshack/images/food_and_drink_3burgers.png" width= "400" height="250">
+
+<img src="https://cdn.shakeshack.com/wp-content/uploads/2014/08/french_fries_hand_b-e1407509046439.jpg"width="300" height="300">
+
+
+<img src="https://www.shakeshack.com/wp-content/themes/shakeshack/images/food_and_drink_3concretes.png"width="300" height="300">
+
+<img src="https://cdn.shakeshack.com/wp-content/uploads/2015/08/Domain-Carousel-4.jpg"width="300" height="300">
+
+<img src="https://cdn.shakeshack.com/wp-content/uploads/2015/07/Austin_Carousel_w4.jpg"width="300" height="300">
+
+<img src="https://www.shakeshack.com/wp-content/themes/shakeshack/images/food_and_drink_3drinks.png"width="300" height="300">
+
+<img src="https://www.shakeshack.com/wp-content/themes/shakeshack/images/food_and_drink_3wine.png"width="300" height="300">
+
+<img src="https://cdn.shakeshack.com/wp-content/uploads/2012/04/Gallery_N_GirlSmilingOutside.jpg"width="300" height="300">
+
+<img src="https://cdn.shakeshack.com/wp-content/uploads/2012/04/Gallery_W_6.jpg"width="300" height="300">
+
+<img src="https://cdn.shakeshack.com/wp-content/uploads/2012/04/Gallery_N_9.jpg"width="300" height="300">
+
+<img src="https://cdn.shakeshack.com/wp-content/uploads/2013/03/ist-pk_lg_1.jpg"width="300" height="300">
+
+<img src="https://cdn.shakeshack.com/wp-content/uploads/2012/04/Gallery_W_11.jpg"width="275" height="200">
+
+<img src="https://www.shakeshack.com/wp-content/themes/shakeshack/images/food_and_drink_4dogs.png"width="275" height="200">
+
+<img src="https://www.shakeshack.com/wp-content/themes/shakeshack/images/shake-breakfast.png"width="275" height="200">
+
+<img src="https://cdn.shakeshack.com/wp-content/uploads/2012/04/Carousel_General121.jpg"width="275" height="200">
+
+<img src="https://cdn.shakeshack.com/wp-content/uploads/2012/04/Carousel_General8.jpg"width="275" height="200">
+
+<img src="https://cdn.shakeshack.com/wp-content/uploads/2012/04/Gallery_W_1.jpg"width="275" height="200">
+
+<img src="https://cdn.shakeshack.com/wp-content/uploads/2015/07/Austin_Carousel_n4.jpg"width="275" height="200">
+
+<img src="https://cdn.shakeshack.com/wp-content/uploads/2012/05/Gallery_N_ShakeBlending1.jpg"width="275" height="200">
+
+<img src="https://cdn.shakeshack.com/wp-content/uploads/2015/07/GSP_Carousel_n.jpg"width="275" height="200">
+
+
+</body>
+
 </html>
